@@ -13,6 +13,8 @@
 		9F560DA52492AFD4000E581A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F560DA42492AFD4000E581A /* Assets.xcassets */; };
 		9F560DA82492AFD4000E581A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F560DA62492AFD4000E581A /* LaunchScreen.storyboard */; };
 		9F560DB424947479000E581A /* MoviesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F560DB324947479000E581A /* MoviesDataModel.swift */; };
+		C6766A2924AD2AEA0025A15C /* MovieMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6766A2824AD2AEA0025A15C /* MovieMasterVC.swift */; };
+		C6DA309924AD3B5B0049B93C /* MovieDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA309824AD3B5B0049B93C /* MovieDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F560DA72492AFD4000E581A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F560DA92492AFD4000E581A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F560DB324947479000E581A /* MoviesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesDataModel.swift; sourceTree = "<group>"; };
+		C6766A2824AD2AEA0025A15C /* MovieMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMasterVC.swift; sourceTree = SOURCE_ROOT; };
+		C6DA309824AD3B5B0049B93C /* MovieDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDetailsVC.swift; path = Classwork6/MovieDetailsVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			children = (
 				9F560D9A2492AFD3000E581A /* Classwork6 */,
 				9F560D992492AFD3000E581A /* Products */,
+				9F560DA92492AFD4000E581A /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +61,32 @@
 		9F560D9A2492AFD3000E581A /* Classwork6 */ = {
 			isa = PBXGroup;
 			children = (
+				C6766A2724AD25DD0025A15C /* View controlers */,
+				C6766A2A24AD2CED0025A15C /* Models */,
 				9F560D9B2492AFD3000E581A /* AppDelegate.swift */,
 				9F560D9D2492AFD3000E581A /* SceneDelegate.swift */,
-				9F560DB324947479000E581A /* MoviesDataModel.swift */,
 				9F560DA12492AFD3000E581A /* Main.storyboard */,
 				9F560DA42492AFD4000E581A /* Assets.xcassets */,
 				9F560DA62492AFD4000E581A /* LaunchScreen.storyboard */,
-				9F560DA92492AFD4000E581A /* Info.plist */,
 			);
 			path = Classwork6;
+			sourceTree = "<group>";
+		};
+		C6766A2724AD25DD0025A15C /* View controlers */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA309824AD3B5B0049B93C /* MovieDetailsVC.swift */,
+				C6766A2824AD2AEA0025A15C /* MovieMasterVC.swift */,
+			);
+			path = "View controlers";
+			sourceTree = "<group>";
+		};
+		C6766A2A24AD2CED0025A15C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F560DB324947479000E581A /* MoviesDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 				9F560DB424947479000E581A /* MoviesDataModel.swift in Sources */,
 				9F560D9C2492AFD3000E581A /* AppDelegate.swift in Sources */,
 				9F560D9E2492AFD3000E581A /* SceneDelegate.swift in Sources */,
+				C6766A2924AD2AEA0025A15C /* MovieMasterVC.swift in Sources */,
+				C6DA309924AD3B5B0049B93C /* MovieDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Classwork6/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuwaitCodes.Classwork6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Classwork6/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuwaitCodes.Classwork6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
